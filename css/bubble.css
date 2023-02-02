@@ -1,0 +1,43 @@
+.talk-bubble {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+	margin-top: 10px;
+    position: relative;
+	width: max-content;
+	height: auto;
+	background-color: rgb(152, 253, 206);
+}
+.round{
+    border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+
+}
+
+.tri-right.right-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: auto;
+	right: -16px;
+    top: 0px;
+	bottom: auto;
+	border: 16px solid;
+	border-color: rgb(152, 253, 206) transparent transparent transparent;
+}
+
+.talktext{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
+    line-height: 1.5em;
+}
+.talktext p{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
