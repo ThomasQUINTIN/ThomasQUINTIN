@@ -49,9 +49,26 @@ html,body {
   }
 }
 
+.classimg.visible{
+  animation: gifannimation 2s forwards;
+  transition: 0.5s;
+}
 
 img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+@keyframes gifannimation{
+  0% {
+    opacity: 0;
+    transform: translateX(-50vw);
+  }
+  50%{
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }

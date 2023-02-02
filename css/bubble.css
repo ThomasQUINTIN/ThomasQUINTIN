@@ -61,7 +61,7 @@
 }
 
 .talk-bubble:nth-child(3).visible{
-    animation: bubbleanim 2s 4s forwards;
+    animation: bubbleanim 2s 5s forwards;
     transition: 0.5s;
 }
 
