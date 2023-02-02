@@ -26,7 +26,6 @@ html,body {
     flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: center;
-    border:5px dotted rgb(244, 232, 6);
   }
 }
 
@@ -41,12 +40,12 @@ html,body {
   }
 
   .wrap {
+    padding-top: 10vh;
     width: 100vw;
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: center;
-    border:5px dotted rgb(244, 232, 6);
   }
 }
 
