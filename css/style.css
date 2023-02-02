@@ -9,24 +9,47 @@ html,body {
     scrollbar-width: none;
 }
 
-.main {
+@media screen and (orientation: landscape) {
+  .main {
     width: 100vw;
     height: 100vh;
     background-color: #fefdfd;
     background-repeat: no-repeat;
     background-size: cover ;
     display: block;
+  }
+
+  .wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    border:5px dotted rgb(244, 232, 6);
+  }
 }
 
-.wrap {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap-reverse;
-  align-items: center;
-  justify-content: center;
-  border:5px dotted rgb(244, 232, 6);
+@media screen and (orientation: portrait) {
+  .main {
+    width: 100vw;
+    height: auto;
+    background-color: #fefdfd;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    display: block;
+  }
+
+  .wrap {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    border:5px dotted rgb(244, 232, 6);
+  }
 }
+
 
 img {
   max-width: 100%;
