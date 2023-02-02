@@ -12,7 +12,7 @@ html,body {
 .main {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background-color: #fefdfd;
     background-repeat: no-repeat;
     background-size: cover ;
     display: block;
@@ -22,6 +22,8 @@ html,body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
   border:5px dotted rgb(244, 232, 6);
 }
 
@@ -30,17 +32,25 @@ html,body {
   z-index: 2;
   height: 60%;
   width: 60% + 6,5%;
-  border:5px dotted rgb(244, 169, 6);
 }
 
-.wrap div:nth-child(1) {
-  width: 50%;
-  border:5px dotted rgb(6, 244, 62);
-  vertical-align: middle;
+.wrap .content{
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  border:5px dotted rgb(244, 232, 6);
 }
 
-.wrap div:nth-child(2) {
-  z-index: 3;
-  border:5px dotted rgb(6, 244, 62);
-  vertical-align: middle;
+.wrap .bubble {
+  width: max-content;
+  margin: auto 0px;
+  border: 4px solid #00bfb6;
+  background-color: #00bfb56a;
+  padding: 20px;
+  font-weight: 900;
+  color: #00bfb6;
+  font-family: arial;
+  position: relative;
+  border-radius: 1em;
+  border:5px dotted rgb(169, 6, 244);
 }
