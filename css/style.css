@@ -6,6 +6,7 @@
 html,body {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
     scrollbar-width: none;
 }
 
@@ -50,17 +51,17 @@ html,body {
 }
 
 .classimg.visible{
-  animation: gifannimation 2s forwards;
+  animation: gifannimationnegative 2s forwards;
   transition: 0.5s;
 }
 
-img {
+.classimg img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-@keyframes gifannimation{
+@keyframes gifannimationnegative{
   0% {
     opacity: 0;
     transform: translateX(-50vw);
