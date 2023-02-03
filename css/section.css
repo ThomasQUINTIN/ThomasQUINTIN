@@ -3,6 +3,7 @@
     position: relative;
     width : 100vw;
     margin-top: -10vh;
+    background-color: #fefdfd;
     border:2px solid #22262b;
     border-color:transparent transparent #22262b transparent;
     border-width:10em;
@@ -16,6 +17,24 @@
     align-items: center;
     justify-content: center;
     flex-direction: row-reverse;
+}
+
+@media screen and (orientation: landscape) {
+  .advance-text{
+    max-width: 100%;
+    width: 30vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .advance-text{
+    max-width: 100%;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .aboutme-bubble {
