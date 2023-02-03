@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@ html,body {
     width: 100%;
     overflow-x: hidden;
     scrollbar-width: none;
+    font-family: 'Itim', cursive;
 }
 
 @media screen and (orientation: landscape) {
