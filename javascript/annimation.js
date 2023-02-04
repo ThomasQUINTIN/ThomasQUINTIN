@@ -34,12 +34,15 @@ $(function () {
       setTimeout(function () {
         $("#lnch").addClass("launching").text("3");
       }, 1000);
+
       setTimeout(function () {
         $("#lnch").addClass("launching").text("2");
       }, 2000);
+
       setTimeout(function () {
         $("#lnch").addClass("launching").text("1");
       }, 3000);
+
       setTimeout(function () {
         $("#lnch").addClass("launching").text("0");
       }, 4000);
