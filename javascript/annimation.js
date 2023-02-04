@@ -1,3 +1,8 @@
+window.addEventListener("load", function() {
+    const loader = document.querySelector(".loader");
+    loader.style.display = "none";
+  });
+  
 const targets = document.querySelectorAll('div');
 
 let element;
