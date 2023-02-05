@@ -1,6 +1,6 @@
 
 function getRandomNumber() {
-    return Math.floor(Math.random() * (200 - 100 + 1)) + 100;
+    return Math.floor(Math.random() * (700 - 100 + 1)) + 100;
 }
 
 function getDateString() {
@@ -13,12 +13,12 @@ function getDateString() {
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
     
-    return `${monthName} ${day} ${hours}:${minutes}:${seconds} wks01 kernel:`;
+    return `${monthName} ${day} ${hours}:${minutes}:${seconds} wks01 kernel:  `;
   }
 
 let time = getRandomNumber();
 
-fetch('../docs/boot.log')
+fetch('/docs/boot.log')
   .then(response => response.text())
   .then(content => {
     const lines = content.split('\n');
@@ -27,9 +27,9 @@ fetch('../docs/boot.log')
       setTimeout(function () {
         document.getElementById("bootcontent").innerHTML += "<br>";
         document.getElementById("bootcontent").innerHTML += getDateString();
-        document.getElementById("bootcontent").innerHTML += "<span style='color:red'>";
         document.getElementById("bootcontent").innerHTML += line;
-        document.getElementById("bootcontent").innerHTML += "<\span>";
     },time += getRandomNumber());
     }
   });
+
+history.pushState({}, null, '/boot/EFI/bootmgr.efi');
