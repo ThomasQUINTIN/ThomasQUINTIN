@@ -26,34 +26,30 @@ targets.forEach(target => observer.observe(target));
 $(function () {
     $("#lnch_btn").on("click", function () {
       setTimeout(function () {
-        $("#lnch").addClass("launching").text("SENDING");
+        $("#lnch").addClass("launching").text("Initialization");
         $("#lnch_btn").addClass("launching");
       }, 0);
 
       setTimeout(function () {
         $("#lnch").addClass("launching").text("3");
-      }, 1000);
+      }, 600);
 
       setTimeout(function () {
         $("#lnch").addClass("launching").text("2");
-      }, 2000);
+      }, 1200);
 
       setTimeout(function () {
         $("#lnch").addClass("launching").text("1");
-      }, 3000);
-
-      setTimeout(function () {
-        $("#lnch").addClass("launching").text("0");
-      }, 4000);
+      }, 1800);
 
       setTimeout(function () {
         $("#lnch").addClass("launched").text("Launch sequence start.");
         $("#lnch_btn").addClass("launched");
-      }, 5000);
+      }, 2200);
 
       setTimeout(function () {
         window.location.assign("html/boot.html");
-      }, 5500);
+      }, 2600);
     });
   });
   
