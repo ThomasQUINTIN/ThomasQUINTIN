@@ -114,6 +114,7 @@
     line-height: 1;
     color: #fff;
     padding: 18px 12px;
+    padding-right: -40px;
     cursor: pointer;
     transition: 0.3s ease transform;
   }

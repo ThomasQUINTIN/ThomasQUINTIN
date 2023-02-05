@@ -1,6 +1,6 @@
 
 function getRandomNumber() {
-    return Math.floor(Math.random() * (700 - 100 + 1)) + 100;
+    return Math.floor(Math.random() * 501);
 }
 
 function getDateString() {
@@ -25,6 +25,8 @@ fetch('/docs/boot.log')
     for (const line of lines) {
       console.log(line);
       setTimeout(function () {
+        if (line == "<end>")
+        window.location.assign("/html/project.html");
         document.getElementById("bootcontent").innerHTML += "<br>";
         document.getElementById("bootcontent").innerHTML += getDateString();
         document.getElementById("bootcontent").innerHTML += line;
