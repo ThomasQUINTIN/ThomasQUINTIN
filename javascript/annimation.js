@@ -23,7 +23,6 @@ const observer = new IntersectionObserver(handleIntersection);
 
 targets.forEach(target => observer.observe(target));
 
-
 $(function () {
     $("#lnch_btn").on("click", function () {
       setTimeout(function () {
@@ -53,7 +52,7 @@ $(function () {
       }, 5000);
 
       setTimeout(function () {
-        window.location.assign("index.html");
+        window.location.assign("html/boot.html");
       }, 5500);
     });
   });

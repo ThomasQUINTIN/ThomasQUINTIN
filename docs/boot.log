@@ -1,0 +1,17 @@
+Linux version 5.15.0-48-generic (buildd@lcy02-amd64-043) (gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0, GNU ld (GNU Binutils for Ubuntu) 2.34) #54~20.04.1-Ubuntu SMP Thu Sep 1 16:17:26 UTC 2022 (Ubuntu 5.15.0-48.54~20.04.1-generic 5.15.53)
+Command line: BOOT_IMAGE=/vmlinuz-5.15.0-48-generic root=/dev/mapper/vgubuntu-root ro quiet splash vt.handoff=7
+KERNEL supported cpus:
+   Intel GenuineIntel
+   Hygon HygonGenuine
+   Centaur CentaurHauls
+   zhaoxin   Shanghai  
+x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+x86/fpu: Supporting XSAVE feature 0x008: 'MPX bounds registers'
+x86/fpu: Supporting XSAVE feature 0x010: 'MPX CSR'
+x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+x86/fpu: xstate_offset[3]:  832, xstate_sizes[3]:   64
+x86/fpu: xstate_offset[4]:  896, xstate_sizes[4]:   64
+x86/fpu: Enabled xstate features 0x1f, context size is 960 bytes, using 'compacted' format.
+signal: max sigframe size: 2032
