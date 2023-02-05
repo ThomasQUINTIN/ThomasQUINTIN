@@ -64,8 +64,34 @@ img {
 
 .projectsection {
   width: 100vw;
-  height: 50vh;
+  height: auto;
   background-color: #003140;
+}
+
+.main.visible{
+  animation: gifannimationpositive 2s forwards;
+  transition: 0.5s;
+}
+
+.contentproject{
+  width: 100vw;
+  height: auto;
+  color: white;
+}
+
+.contentproject .project{
+  padding: 2em;
+}
+
+.round{
+  padding: 1em;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+}
+
+.contentproject .project .info {
+  background-color: #0d5e77ce;
 }
 @keyframes gifannimationpositive{
   0% {
