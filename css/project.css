@@ -12,48 +12,61 @@ html,body {
   background-color: #ffffff;
 }
 
+.header{
+  position: relative;
+}
+
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-.wrap {
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.projectsection {
-  width: 100vw;
-  height: 100vh;
-  background-color: #003140;
-}
-
-.container {
+.container{
   display: flex;
   justify-content: space-between;
 }
 
-.left {
+.containe .left {
   position: relative;
   flex: 1;
   background-color: #ffffff;
 }
 
-.container .triangle {
+.container .triangle{
   position: absolute;
   bottom: 0;
   border-bottom : 10vw solid #003140;
   border-right : 100vw solid transparent;
 }
 
-.main.visible{
-  animation: gifannimationpositive 2s forwards;
-  transition: 0.5s;
+.top-container .title p{
+  color: white;
+  font-weight: 900;
+  font-size: 3em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: left;
+  line-height: 1.5em;
 }
 
+.title{
+  width: 100vw;
+  height: auto;
+  color: white;
+  background-color: #003140;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.projectsection {
+  width: 100vw;
+  height: 50vh;
+  background-color: #003140;
+}
 @keyframes gifannimationpositive{
   0% {
     opacity: 0;
