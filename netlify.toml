@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/html/*"
-  to = "/other"
-  status = 200
