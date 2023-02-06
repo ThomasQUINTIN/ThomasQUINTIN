@@ -42,7 +42,6 @@
   background-color: rgb(255, 166, 64);
 }
 
-
 .aboutme-text{
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -67,6 +66,24 @@
     animation: gifannimationpositive 2s forwards;
     transition: 0.5s;
 }
+
+.advance-text.visible{
+  animation: gifannimationneg 2s forwards;
+    transition: 0.5s;
+}
+
+@keyframes gifannimationneg{
+    0% {
+      opacity: 0;
+      transform: translateX(-500px);
+    }
+    50%{
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
 @keyframes gifannimationpositive{
     0% {

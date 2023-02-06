@@ -1,1 +1,1 @@
-// history.pushState({}, null, '/');
+history.pushState({}, null, '/');
