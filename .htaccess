@@ -1,4 +1,0 @@
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteRule ^project/?$ /html/project.html [L,NC,QSA]
-</IfModule>
