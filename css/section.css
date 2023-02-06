@@ -103,6 +103,7 @@
   align-items: center;
   justify-content: center;
 }
+
   #projectboutton {
     position: relative;
     width: max-content;
@@ -181,3 +182,55 @@
       transform: scale(0) rotateZ(-90deg);
     }
   }
+
+.sectionhobbies
+{
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  background-color: #22262b;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.githubbar{
+  position: relative;
+  padding-left: 5em;
+  padding-right: 5em;
+  background-color: #22262b;
+}
+
+.gitcontent {
+  padding-top: 1em;
+  border-radius: 15px 15px 0 0;
+  background-color: #444654;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color:#fff;
+  width: 100%;
+  height: 100%;
+}
+
+.gitoption {
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 10px;
+  background-color: #343541;
+}
+
+.gitoption a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.gitoptionimg {
+  margin: 0.5em;
+}
+
+.gitoptionimg img{
+  max-width: 3em;
+  max-width: auto;
+  border-radius: 50%;
+}
