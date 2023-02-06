@@ -31,6 +31,10 @@
                     <div class="project">
                         <div class="info round">
                             <p>.</p>
+                            {% if CONTEXT == 'deploy-preview' %}
+                            <h1>Hello! This is a preview version of our site.</h1>
+                            <p>The branch is {{ BRANCH }}</p>
+                            {% endif %}
                         </div>
                     </div>
                     <div class="project">
