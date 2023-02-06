@@ -194,11 +194,22 @@
   justify-content: center;
 }
 
-.githubbar{
-  position: relative;
-  padding-left: 5em;
-  padding-right: 5em;
-  background-color: #22262b;
+@media screen and (orientation: landscape) {
+  .githubbar{
+    position: relative;
+    padding-left: 5em;
+    padding-right: 5em;
+    background-color: #22262b;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .githubbar{
+    position: relative;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #22262b;
+  }
 }
 
 .gitcontent {
