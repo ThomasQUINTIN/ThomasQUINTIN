@@ -26,7 +26,7 @@ fetch('/docs/boot.log')
       console.log(line);
       setTimeout(function () {
         if (line == "<end>")
-        window.location.assign("/html/project");
+        window.location.assign("/html/project.html");
         document.getElementById("bootcontent").innerHTML += "<br>";
         document.getElementById("bootcontent").innerHTML += getDateString();
         document.getElementById("bootcontent").innerHTML += line;
