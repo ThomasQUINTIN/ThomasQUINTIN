@@ -75,13 +75,9 @@
 @keyframes gifannimationneg{
     0% {
       opacity: 0;
-      transform: translateX(-500px);
-    }
-    50%{
-      opacity: 1;
     }
     100% {
-      transform: translateX(0);
+      opacity: 1;
     }
   }
 
@@ -121,6 +117,7 @@
     border-radius: 50px;
     transition: 0.5s ease background-color, 0.5s ease box-shadow;
     background: #e74c3c;
+    cursor: pointer;
     box-shadow: 0 20px 30px -6px #e74c3c;
   }
   #lnch_btn {
@@ -143,6 +140,7 @@
     transform: rotateZ(-90deg);
     animation: shake 0.3s ease 0.5s infinite;
   }
+
   @keyframes shake {
     10%,
     90% {
