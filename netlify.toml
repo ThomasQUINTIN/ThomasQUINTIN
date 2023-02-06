@@ -1,5 +1,4 @@
 [[redirects]]
-  from = "/html/project.html"
-  to = "/project"
-  status = 301
-  force = false
+  from = "/html/*"
+  to = "/other"
+  status = 200
