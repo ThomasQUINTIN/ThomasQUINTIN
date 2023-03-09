@@ -1,5 +1,37 @@
 // https://api.github.com/repos/ThomasQUINTIN/portfolio/commits
 
+function date_compare(day,month,year,hour,minutes) {
+    let nowdate = new Date();
+    let nowmonth = nowdate.getMonth() + 1;
+    let nowday = nowdate.getDate();
+    let nowhours = nowdate.getHours();
+    let nowminutes = nowdate.getMinutes();
+
+    if ((nowmonth - month) == 0) {
+        if ((nowday - day) == 0) {
+
+        } else if ((nowday - day) == 1) {
+            return 'yesterday';
+        } else {
+            if (( nowday - day) < 7 )
+                return (nowday - day ) + ' day ago';
+            return Math.floor((nowday - day) / 7) + ' week ago';
+        }
+    }
+    return nowday + '/' + nowmonth + '/' + nowhours + ':' + nowminutes;
+}
+
+function date_parsing(data) {
+    let day = data.substr(8, 2);
+    let month = data.substr(5, 2);
+    let year = data.substr(0, 4);
+    let hours = data.substr(11, 2);
+    let minutes = data.substr(14, 2);
+
+    let date = '<div class="gitoption"><p> ' + "Date: " + date_compare(day,month,year,hours,minutes) + ' <\p><\div>';
+    return date;
+}
+
 function add_info(name, data ,type) {
     let div = '<div class="gitoption"><p> ' + name + data + ' <\p><\div>';
 
@@ -15,14 +47,12 @@ function add_info(name, data ,type) {
         else
             div = '<div class="gitoption"><p> ' + name + data + ' <\p><\div>';
     }
-    if (type == 'date') {
-        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
-        div = '<div class="gitoption"><p> ' + name + data.substr(8, 2) + ' ' + months[data.substr(5, 2).charCodeAt(0) - 47] + ' ' + data.substr(0, 4) + '  ' + data.substr(11, 2) + ':' + data.substr(14, 2) + ' <\p><\div>';
-    }
+    if (type == 'date')
+        div = date_parsing(data);
     if (type == 'image')
         div = '<div class="gitoptionimg"><img alt="'+ name +'" src="'+ data +'"/><\div>';
     if (type == 'link')
-        div = '<div class="gitoption"><a href="' + data +'">' + name + '</a><\div>';
+        div = '<a href="' + data +'" target="_blank"><div class="gitoption">' + name + '<\div></a>';
     document.getElementById('git').innerHTML += div;
 }
 function get_hash(jsondata) {
