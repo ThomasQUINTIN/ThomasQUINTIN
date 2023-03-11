@@ -195,6 +195,13 @@ ul {
   background-color: #003140;
 }
 
+.bottoncv {
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: #e74c3c;
+}
+
 .cv a {
   font-size: 2em;
   color: white;

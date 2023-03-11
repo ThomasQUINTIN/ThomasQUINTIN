@@ -24,4 +24,5 @@ var swiper = new Swiper(".swiper", {
       prevEl: ".swiper-button-prev"
     }
   });
-  
+
+  history.pushState({}, null, '/boot/EFI/bootmgr.efi');
