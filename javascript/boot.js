@@ -34,4 +34,4 @@ fetch('/docs/boot.log')
     }
   });
 
-history.pushState({}, null, '/boot/EFI/bootmgr.efi');
+history.pushState({}, null, '/');
